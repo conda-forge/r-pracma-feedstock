@@ -1,5 +1,5 @@
 {%set name = 'pracma' %}
-{%set version = '2.0.4' %}
+{% set version = "2.1.5" %}
 
 {%set posix = 'm2-' if win else '' %}
 {%set native = 'm2w64-' if win else '' %}
@@ -13,7 +13,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/{{ name }}_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/{{ name }}/{{ name }}_{{ version }}.tar.gz
-  sha256: ccf30cabad9bafcc28ed1c8e5aa358b48b4f46224eb113624b77f33f2b4871fc
+  sha256: c95993af91dba98307b3b8660cda8f87d8bbd2ecc2ebe5deabeba9fd043b9ba1
 
 build:
   number: 0
