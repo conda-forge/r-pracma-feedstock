@@ -14,9 +14,9 @@ source:
   sha256: c95993af91dba98307b3b8660cda8f87d8bbd2ecc2ebe5deabeba9fd043b9ba1
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,8 +42,7 @@ about:
     special mathematical functions. Uses ''MATLAB'' function names where appropriate
     to simplify porting.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
