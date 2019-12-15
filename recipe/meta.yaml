@@ -1,4 +1,4 @@
-{% set version = '2.2.5' %}
+{% set version = "2.2.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pracma_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pracma/pracma_{{ version }}.tar.gz
-  sha256: 2fe83e3a556f5aab3ba4c9867630283c78c9a13912c04991daf55712811e4d47
+  sha256: 0cea0ff5e88643df121e07b9aebfe57084c61e11801680039752f371fe87bf1e
 
 build:
   merge_build_host: True  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
