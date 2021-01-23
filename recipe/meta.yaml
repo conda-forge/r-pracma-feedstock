@@ -1,4 +1,4 @@
-{% set version = "2.2.9" %}
+{% set version = "2.3.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pracma_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pracma/pracma_{{ version }}.tar.gz
-  sha256: 0cea0ff5e88643df121e07b9aebfe57084c61e11801680039752f371fe87bf1e
+  sha256: cf1f8d7724a385d9a2e1a5496d9ba0e9908940b85669fb2c506b9059722cb93c
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -35,13 +35,11 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=pracma
-  license: GPL (>= 3)
-  summary: ' Provides a large number of functions from numerical analysis and linear algebra,
-    numerical optimization, differential equations, time series, plus some well-known
-    special mathematical functions. Uses ''MATLAB'' function names where appropriate
-    to simplify porting.'
+  license: GPL-3.0-or-later
+  summary: " Provides a large number of functions from numerical analysis and linear algebra, numerical optimization, differential equations, time series, plus some well-known special mathematical functions. Uses 'MATLAB' function names where appropriate to simplify porting."
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:

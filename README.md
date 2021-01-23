@@ -3,13 +3,11 @@ About r-pracma
 
 Home: https://CRAN.R-project.org/package=pracma
 
-Package license: GPL (>= 3)
+Package license: GPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pracma-feedstock/blob/master/LICENSE.txt)
 
 Summary:  Provides a large number of functions from numerical analysis and linear algebra, numerical optimization, differential equations, time series, plus some well-known special mathematical functions. Uses 'MATLAB' function names where appropriate to simplify porting.
-
-
 
 Current build status
 ====================
