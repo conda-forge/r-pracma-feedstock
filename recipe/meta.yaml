@@ -1,4 +1,4 @@
-{% set version = "2.3.3" %}
+{% set version = "2.3.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pracma_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pracma/pracma_{{ version }}.tar.gz
-  sha256: cf1f8d7724a385d9a2e1a5496d9ba0e9908940b85669fb2c506b9059722cb93c
+  sha256: 17ac83fd48c9155e00dc3f0433f95723505dc73d046860afd9001866d699b8de
 
 build:
   merge_build_host: true  # [win]
